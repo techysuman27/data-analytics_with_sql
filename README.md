@@ -23,15 +23,23 @@ Warehouse Layers:
 
 This repository focuses exclusively on analytics performed on the Gold Layer.
 
-ERP ──┐
-       ├── Data Warehouse Project
-CRM ──┘
-
-Bronze → Silver → Gold
-
-             ↓
-
-      SQL Analytics Project
+```text
+            ERP
+             │
+             ▼
+        ┌─────────┐
+        │         │
+CRM ───►│ Data    │
+        │ Warehouse│
+        │ Project │
+        └─────────┘
+             │
+             ▼
+ Bronze → Silver → Gold
+                     │
+                     ▼
+        SQL Analytics Project
+```
 
 # 📂 Analytics Dataset
 
